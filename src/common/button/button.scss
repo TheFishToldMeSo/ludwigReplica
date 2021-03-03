@@ -1,0 +1,338 @@
+$primaryText: rgb(65, 65, 65);
+$primaryHover: rgba(65, 65, 65, 0.12);
+$signupBackground: #2683ff;
+$signUpHover: rgb(0, 101, 255);
+$signUpText: white;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  &:hover {
+    text-decoration: none;
+    background: $primaryHover none repeat scroll 0% 0%;
+  }
+
+  display: inline-block;
+  // min-width: 50px;
+  margin-right: 0.4em;
+  text-align: center;
+  position: relative;
+  border-radius: 4em;
+
+  a {
+    max-width: 100%;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    background: none repeat scroll 0% 0%;
+    appearance: none;
+    position: relative;
+    text-decoration: none;
+
+    display: flex;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    text-align: center;
+    -moz-box-align: center;
+    font-family: "Nunito Sans", "Open Sans", "helvetica neue", helvetica, arial,
+      sans-serif;
+    outline: currentcolor none 0px;
+    color: $primaryText;
+
+    .buttonContentWrapper {
+      display: flex;
+      max-width: 100%;
+      flex: 1 1 0%;
+      -moz-box-align: center;
+      align-items: center;
+      -moz-box-pack: center;
+      justify-content: center;
+
+      .buttonContent {
+        font-weight: 700;
+        display: inline-block;
+        vertical-align: middle;
+        flex: 1 0 auto;
+        user-select: none;
+        width: initial;
+
+        .iconWrapper {
+          display: flex;
+          max-width: 100%;
+          -moz-box-align: center;
+          align-items: center;
+          position: relative;
+          width: 1.5em;
+          // height: 1em;
+          // margin: 0px 0.6em 0px -0.5em;
+          flex: 0 1 0%;
+          -moz-box-pack: start;
+          justify-content: flex-start;
+
+          .icon {
+            display: flex;
+            max-width: 100%;
+            flex-shrink: 0;
+            -moz-box-align: center;
+            align-items: center;
+            -moz-box-pack: center;
+            justify-content: center;
+            pointer-events: none;
+            user-select: none;
+          }
+        }
+        .textContent {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &.Signup {
+    &.footer {
+      .buttonContent {
+        display: flex;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      background: $signUpHover none repeat scroll 0% 0%;
+    }
+
+    background-color: $signupBackground;
+
+    a {
+      max-width: 100%;
+      flex: 1 1 0%;
+      -moz-box-align: center;
+      -moz-box-pack: start;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .buttonContentWrapper {
+        font-size: 1em;
+        font-family: "Nunito Sans", "Open Sans", "helvetica neue", helvetica,
+          arial, sans-serif;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        .buttonContent {
+          .iconWrapper {
+            .icon {
+              display: flex;
+              max-width: 100%;
+              flex-shrink: 0;
+              -moz-box-align: center;
+              align-items: center;
+              -moz-box-pack: center;
+              justify-content: center;
+              pointer-events: none;
+              user-select: none;
+            }
+          }
+          color: $signUpText;
+        }
+      }
+    }
+  }
+
+  &.Options {
+    margin-left: 0.5em;
+    position: relative;
+    z-index: 1;
+    background: rgba(65, 65, 65, 0.12) none repeat scroll 0% 0%;
+
+    a {
+      display: flex;
+      max-width: 100%;
+      flex-shrink: 0;
+      padding: 0.5em 0px;
+      position: relative;
+      width: 28px;
+      height: 28px;
+      border-radius: 3em;
+      -moz-box-pack: center;
+      justify-content: center;
+      -moz-box-align: center;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+
+      .icon {
+        margin-left: 7px;
+        margin-right: 0px;
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+
+  &.Search {
+    &:hover {
+      text-decoration: none;
+      background: $signUpHover none repeat scroll 0% 0%;
+    }
+
+    width: 28px;
+    height: 28px;
+    border-radius: 3em;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 2em;
+    display: flex;
+    width: 28px;
+    margin: 5px;
+    z-index: 1;
+    -moz-box-pack: center;
+    justify-content: center;
+    background-color: $signupBackground;
+
+    .buttonContent {
+      font-size: smaller;
+      padding-top: 0.15em;
+      color: $signUpText;
+
+      .icon {
+        margin-left: 6px;
+        // margin-right: 0px;
+        // width: 1em;
+        // height: 1em;
+      }
+    }
+  }
+
+  &.WinDownload {
+    a {
+      &:hover {
+        text-decoration: none;
+        background: $signUpHover none repeat scroll 0% 0%;
+      }
+      @media screen and (min-width: 480px) {
+        font-size: 1.2em !important;
+        line-height: 1.4em !important;
+        padding: 0.5em 1em;
+      }
+
+      padding: 0.5em 1em;
+      font-size: 1em;
+      text-align: center;
+      border-radius: 4em;
+      max-width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      position: relative;
+      text-decoration: none;
+      font-family: "Nunito Sans", "Open Sans", "helvetica neue", helvetica,
+        arial, sans-serif;
+      appearance: none;
+      border: medium none;
+      outline: currentcolor none 0px;
+      cursor: pointer;
+      user-select: none;
+      color: rgb(255, 255, 255);
+      background: rgb(38, 131, 255) none repeat scroll 0% 0%;
+
+      .buttonContent {
+        display: flex;
+        max-width: 100%;
+        flex: 0 1 auto;
+        -moz-box-align: center;
+        align-items: center;
+        -moz-box-pack: center;
+        justify-content: center;
+
+        .textContent {
+          font-size: 0.76em;
+          text-transform: uppercase;
+          font-weight: 700;
+          display: inline-block;
+          vertical-align: middle;
+          flex: 1 0 auto;
+          user-select: none;
+        }
+      }
+    }
+  }
+
+  &.Facebook,
+  &.Twitter,
+  &.Linkedin,
+  &.Youtube {
+    @media screen and (max-width: 870px) {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    @media screen and (max-width: 670px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    @media screen and (max-width: 320px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    padding-left: 4px;
+    padding-right: 4px;
+    color: rgb(255, 255, 255);
+    flex: 0 1 60px;
+    font-size: 1.2em;
+
+    a {
+      appearance: none;
+      text-decoration: none;
+      color: inherit;
+      cursor: inherit;
+
+      .buttonContent {
+        display: flex;
+        max-width: 100%;
+        flex-shrink: 0;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+        color: rgb(65, 65, 65);
+        position: relative;
+        font-size: 1.4em;
+        width: 28px;
+        height: 28px;
+        border-radius: 3em;
+        -moz-box-pack: center;
+        justify-content: center;
+        cursor: pointer;
+        -moz-box-align: center;
+        align-items: center;
+        user-select: none;
+        padding-right: 0px;
+        padding-left: 0px;
+
+        .icon {
+          margin-left: 0px;
+          margin-right: 0px;
+          width: 1em;
+          height: 1em;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  &.Download {
+    &.footer {
+      .buttonContent {
+        display: flex;
+      }
+      margin-top: 10px;
+      text-decoration: none;
+      background: $primaryHover none repeat scroll 0% 0%;
+    }
+  }
+}

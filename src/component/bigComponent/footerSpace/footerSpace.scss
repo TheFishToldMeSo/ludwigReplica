@@ -1,0 +1,56 @@
+.footerSpace {
+  -moz-box-align: center;
+  position: relative;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+  text-align: center;
+
+  .footerSpaceWrapper {
+    @media only screen and (min-width: 1024px) {
+      grid-auto-rows: 1fr;
+      grid-template-areas:
+        "g a a b c "
+        "g a a b c "
+        "f f f e d ";
+    }
+
+    @media only screen and (min-width: 870px) {
+      grid-template-areas:
+        " c c c c "
+        " a a b b "
+        " f f e d ";
+    }
+
+    @media only screen and (min-width: 480px) {
+      grid-template-areas:
+        " c c c "
+        " a a a "
+        " b b . "
+        " e e d "
+        " f f f ";
+    }
+
+    flex-shrink: 0;
+    max-width: 1280px;
+    -moz-box-align: start;
+    -moz-box-pack: justify;
+    flex-wrap: wrap;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      " c c "
+      " a a "
+      " b d "
+      " e e "
+      " f f ";
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 2em;
+    margin: 0px auto;
+  }
+}

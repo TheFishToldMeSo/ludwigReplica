@@ -1,0 +1,200 @@
+.footerSpaceCredits {
+  @media screen and (min-width: 670px) {
+    flex-wrap: nowrap;
+  }
+  -moz-box-align: baseline;
+  max-width: 100%;
+  -moz-box-pack: justify;
+  flex: 1 0 100%;
+
+  display: flex;
+  order: 4;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-flow: row-reverse wrap;
+
+  .footerCreditsButtons {
+    @media screen and (min-width: 670px) {
+      flex: initial;
+    }
+    -moz-box-align: center;
+    flex: 1 0 0%;
+    -moz-box-pack: justify;
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    .creditsButtonLists {
+      @media screen and (min-width: 670px) {
+        flex: initial;
+        margin-bottom: 1em;
+      }
+      flex: 1 1 0%;
+
+      grid-area: e;
+      order: 1;
+      align-self: center;
+      margin-bottom: 0.5em;
+    }
+
+    .languagesWrapper {
+      @media screen and (min-width: 670px) {
+        order: 2;
+        flex: 1 1 0%;
+        margin-bottom: 1em;
+      }
+      flex: 1 0 100%;
+      -moz-box-align: center;
+      align-self: stretch;
+      max-width: 100%;
+
+            :hover{
+                background-color: #d0dae6;
+                border-radius: 0.5em;
+            }
+      display: flex;
+      grid-area: d;
+      order: 0;
+      align-items: center;
+      padding: 0px;
+      margin-bottom: 0.5em;
+
+      .anotherLanguageWrapper {
+        flex: 1 1 0%;
+
+        .anotherLanguageWrapper2 {
+          max-width: 100%;
+          width: 100%;
+          flex-shrink: 0;
+          -moz-box-align: center;
+          appearance: none;
+          cursor: pointer;
+
+          display: flex;
+          border-radius: 0.5em;
+          align-items: center;
+          border: medium none;
+          box-shadow: none;
+          line-height: 2em;
+          white-space: nowrap;
+          color: rgb(65, 65, 65);
+          background: rgba(77, 153, 255, 0.12) none repeat scroll 0% 0%;
+
+          .langSelectLabel {
+            position: absolute;
+
+            display: inline;
+            padding: 0px 1.8em;
+            top: 0.2em;
+            left: 0px;
+            font-weight: 300;
+            font-size: 0.7em;
+            color: rgb(74, 74, 74);
+          }
+
+          .langDropDown {
+            &:last-of-type {
+              border-bottom: medium none;
+              box-shadow: none;
+            }
+
+            max-width: 100%;
+            width: 100%;
+            -moz-box-align: center;
+            flex-shrink: 0;
+            appearance: none;
+            border: medium none;
+            white-space: nowrap;
+
+            display: flex;
+            align-items: center;
+            padding: 0.2em 3em 0.2em 1em;
+            line-height: 2em;
+            font-size: 1em;
+            box-shadow: none;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+          }
+
+          .dropDownIcon {
+            pointer-events: none;
+
+            text-align: center;
+            margin-left: -3em;
+            width: 3em;
+
+            .dropDownIconWrapper {
+              display: flex;
+              max-width: 100%;
+              flex-shrink: 0;
+              -moz-box-align: center;
+              align-items: center;
+              -moz-box-pack: center;
+              justify-content: center;
+              pointer-events: none;
+              user-select: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerCreditsContent {
+    @media screen and (min-width: 670px) {
+      margin-bottom: 1em;
+      flex: 1 1 0%;
+    }
+    flex: 1 0 100%;
+
+    grid-area: f;
+    align-self: center;
+    margin-bottom: 0.5em;
+
+    .contentWrapper {
+      @media screen and (min-width: 870px) {
+        padding: 12px;
+      }
+
+      @media screen and (min-width: 670px) {
+        padding: 8px;
+        -moz-box-pack: start;
+        justify-content: flex-start;
+      }
+
+      @media screen and (min-width: 480px) {
+        padding: 8px;
+      }
+      -moz-box-pack: center;
+      max-width: 100%;
+      flex-shrink: 0;
+
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      color: rgb(65, 65, 65);
+
+      .anotherContentWrapper {
+        @media screen and (min-width: 870px) {
+          padding-left: 12px;
+          padding-right: 12px;
+          font-size: 0.8em;
+        }
+
+        @media screen and (min-width: 670px) {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 0.64em;
+        text-align: center;
+      }
+    }
+  }
+}

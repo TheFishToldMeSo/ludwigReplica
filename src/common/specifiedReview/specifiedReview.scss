@@ -1,0 +1,78 @@
+.specifiedReview {
+  max-width: 270px;
+  min-height: 130px;
+
+  margin: 0px 0.5em 2em;
+
+  .reviewContentWrapper {
+    position: relative;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.5em 0.5em 0px;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    background: white none repeat scroll 0% 0%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    .reviewContent {
+      position: relative;
+      padding-left: 2em;
+      margin: 0px;
+      text-align: left;
+      color: rgb(34, 34, 34);
+      font-weight: 500;
+
+      i {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        width: 2em;
+        top: -1em;
+        left: 0px;
+
+        &::before {
+          display: inline-block;
+          content: "“";
+          font-size: 3em;
+          color: rgb(0, 109, 255);
+        }
+      }
+    }
+  }
+
+  .reviewersDetail {
+    text-align: left;
+
+    .reviewersPfp {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 0.5em;
+      vertical-align: top;
+      width: 40px;
+      height: 40px;
+
+      img {
+        max-width: 48px;
+        user-select: none;
+
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .reviewersInfo {
+      max-width: calc(100% - 40px);
+
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      padding-left: 1em;
+      font-size: 0.7em;
+      color: rgb(58, 58, 58);
+
+      p {
+        margin: 0px;
+        font-weight: 700;
+      }
+    }
+  }
+}

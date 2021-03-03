@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.institutionLists {
+  @media screen and (min-width: 320px) {
+    padding: 8px;
+  }
+  
+  @media screen and (min-width: 480px) {
+    padding: 8px;
+  }
+  
+  @media screen and (min-width: 870px) {
+    flex: 0 1 50%;
+  }
+  
+  max-width: 100%;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  flex: 1 1 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px;
+
+  .institutionIconList {
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    max-width: 100%;
+    flex: 0 0 400px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

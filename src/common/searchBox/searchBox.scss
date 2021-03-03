@@ -1,0 +1,69 @@
+.searchWords {
+  max-width: 100%;
+  position: relative;
+  -moz-box-align: center;
+  flex: 1 0 auto;
+  order: 1;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  line-height: 24px;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0px auto;
+  border-radius: 0.8em;
+  background: white none repeat scroll 0% 0%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 10px -1px;
+
+  #input-wrapper {
+    min-height: 60px;
+
+    flex: 1 0 auto;
+    padding-left: 1em;
+
+    ::before {
+      content: "";
+      display: inline-block;
+      min-height: 60px;
+      vertical-align: middle;
+    }
+
+    .inputBar {
+      width: 100%;
+
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+
+      .searchArea2 {
+        display: inline-block;
+        vertical-align: middle;
+        font: inherit;
+        font-weight: 600;
+        outline: #777777 none 0px;
+        border: medium none;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+        width: 100%;
+      }
+    }
+  }
+
+  .searchButtonIconz {
+    position: relative;
+    flex: 0 1 auto;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    color: rgb(0, 109, 255);
+  }
+}

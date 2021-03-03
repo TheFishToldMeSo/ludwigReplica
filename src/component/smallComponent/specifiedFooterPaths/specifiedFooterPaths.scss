@@ -1,0 +1,23 @@
+.specifiedFooterPaths{display: flex;
+    max-width: 100%;
+    flex: 1 1 0%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .specifiedFooterPathsWrapper{
+
+        .pathHeader{margin: 0px;
+            padding: 0.5em 1em;
+            font-weight: 700;
+            font-family: "Gelasio", georgia, times, serif;
+
+        }
+
+        .pathsLists{display: flex;
+            max-width: 100%;
+            flex-shrink: 0;
+            flex-direction: column;
+
+        }
+    }
+}
