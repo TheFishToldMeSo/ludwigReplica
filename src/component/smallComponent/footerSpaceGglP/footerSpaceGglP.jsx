@@ -2,7 +2,6 @@
 import React from "react";
 import InstitutionIcon from "../../../common/institutionIcon/institutionIcon";
 import IMGSS from "../../../assets/img/gglplay.png";
-import Button from "../../../common/button/button";
 import "./footerSpaceGgPl.scss";
 
 export default class FooterSpaceGglP extends React.Component {

@@ -6,7 +6,7 @@ export default class InstitutionIcon extends React.Component {
   render() {
     return (
       <div className={`institutionIcon ${this.props.name}`}>
-        <a rel="noopener" target="_blank" href={this.props.link}>
+        <a rel="noreferrer" target="_blank" href={this.props.link}>
           <img
             loading="lazy"
             

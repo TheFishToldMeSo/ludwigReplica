@@ -19,7 +19,7 @@ export default class AdDefinition extends React.Component {
           <div className="definitionVideo">
             <div className="videoWrapper">
               <div className="videoBorder">
-                <iframe
+                <iframe title="advertise Youtube Video"
                   width="100%"
                   height="244"
                   src="https://www.youtube.com/embed/w0vNe0E76Vo"

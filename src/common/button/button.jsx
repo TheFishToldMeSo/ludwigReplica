@@ -10,7 +10,7 @@ export default class Button extends React.Component {
           className="linkPage"
           href={this.props.link}
           target="_blank"
-          rel="noopener nonreferer"
+          rel="noreferrer"
         >
           <div className="buttonContentWrapper">
             <div className="buttonContent">
