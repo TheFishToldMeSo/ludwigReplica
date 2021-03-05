@@ -1,2 +1,3 @@
 # ludwigReplica
-Replicate Ludwig.gurur website to learn more about React
+Replicate Ludwig.guru website to learn more about React
+see here: https://ludwigclonetranhtranhtranh.netlify.app/
